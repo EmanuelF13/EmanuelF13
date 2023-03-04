@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <title>Responsive Resume</title>
-  <!-   -> 
+
+ 
+
+<!--Awsome library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="CvStyles.css"> 
+
+  
 </head>
 <body>
-   <div class="container">
+  <!-- Trigger button for HTML conversion-->
+  <button onclick="convertHTMLToPDF();" hidden>Convert HTML to PDF</button>
+
+   <div id="contentToPrint" class="container">
     <div class="left_side">
         <div class="profileText">
           <div class="img8x">
@@ -40,6 +47,11 @@
                   <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                   <span class="text">Taragona,Cambrils</span>
                 </li>
+                <li>
+                  <span class="icon"> <i class="fa fa-github" aria-hidden="true"></i></span>
+                  <span class="text"><a href="https://www.linkedin.com/in/emanuel-frenchel-319458267/">GitHub</a></span>
+                </li>
+               
               </ul>
             </div>
 
@@ -67,6 +79,16 @@
                     <h4>Bachelor Degree in Computer Science</h4>
                     <h4>University "Alexandru Ioan Cuza" Iasi</h4>
                   </li>
+                  <li>
+                    <h5>2007</h5>
+                    <h4>BACCALAUREATE</h4>
+                    <h4>Liceul "Miron Constin" Iasi</h4>
+                  </li>
+                  <li>
+                    <h5>1995-2007</h5>
+                    <h4>Highschool</h4>
+                    <h4>Liceul "Miron Constin" Iasi</h4>
+                  </li>
                 </ul>
 
 
@@ -76,7 +98,7 @@
                       <li>
                         <span class="text">English</span>
                         <span class="percentage">
-                          <div style="width: 90%;"></div>
+                          <div style="width: 100%;"></div>
                         </span>
                         
                       </li>
@@ -97,7 +119,7 @@
                       <li>
                         <span class="text">Romanian</span>
                         <span class="percentage">
-                          <div style="width: 90%;"></div>
+                          <div style="width: 100%;"></div>
                         </span>
                         
                       </li>
@@ -128,7 +150,11 @@
                 <h4>Software Developer</h4>
                 <p>Most of the work done here is on maintenance and creating new features.
                   Main applications that I worked on are: ALP, Monap, BMA, PFX, EuropeanGate, GPE.
-                  Most used languages are: Java, SQL, Splunk, HTML, CSS.</p>
+                  Design software solutions by analyzing system performance standards,increaseing performance efficiency.
+                  Analyzed systems flow,data usage, and work processes and investigated problem areas.
+                  Planned ,tracked and managed deliverables on short-term sprints and long-term software deployments.
+                  Developed and executed test procedures for software components.
+                  *Most used languages are: Java, SQL, Splunk, HTML, CSS.*</p>
               </div>
           </div>
 
@@ -139,8 +165,11 @@
             </div>
             <div class="text">
               <h4>Administrator</h4>
-              <p>Here I did mostly maintenance to the firm website that I created. Other activities included PC maintenance
-                (software and hardware), plus updating internal automation application's.</p>
+              <p>Mantained  the firm website that I created. Other activities included PC maintenance
+                (software and hardware), plus updating internal automation application's. Analysed department 
+                documents for apropriatedistribution and filling. Asisted varous bussiness group with document 
+                organization and dissemination during cqusition.Supported with improving operations and resolving
+                  issues to deliver a better customer service</p>
             </div>
         </div>
 
@@ -152,10 +181,37 @@
           </div>
           <div class="text">
             <h4>Automation Engineer</h4>
-            <p>Mostly automation and updating internal software for administration purposes and maintenance for
-              PCs(hardware and software).</p>
+            <p>Developed a computer based system that monitored prodction equipment, and succesfully reduced maintainance cost by 68% in 1 year. Decreased the cycle times for casting by developing custom programs
+              in Visual basic for Application(VBA) with Microsoft Excel to automate repetitive calculation(ex: taxes) saving a lot in time and manpower.
+              Made a user interface for site to update on product more easily and to maintain stock data. 
+            </p>
           </div>
         </div>
+
+        <div class="box">
+          <div class="year_company">
+            <h5>2011</h5>
+            <h5>RCS-RDS Romania(8 months)</h5>
+          </div>
+          <div class="text">
+            <h4>Sales Agent</h4>
+            <p> Responded to customer questions and rang up sales. Handled customer inquiries in-person and over the phone. Presented customer with detailed information on available promotions and specials.
+              Addressed customer concerns including issues such as instalment and hadeling special request.</p>
+          </div>
+      </div>
+
+      <div class="box">
+        <div class="year_company">
+          <h5>2010</h5>
+          <h5>MamaMia Pizza(2 months)</h5>
+        </div>
+        <div class="text">
+          <h4>Waitress & Busser</h4>
+          <p> Took food and drink orders from customers and delivered them when appropriate.Bussed 
+            tables and reset place settings quickly and effectively.</p>
+        </div>
+    </div>
+
       </div> 
 
         <div class="about skills">
@@ -204,7 +260,7 @@
           </div>
         </div>
 
-<!--More images can be taken from: https://fontawesome.com/v4/icons/ -->
+
         <div class="about interest">
           <h2 class="title2">Interests</h2>
           <ul>
@@ -219,8 +275,42 @@
         </div>
 
 
+        <div class="about interest">
+          <h2 class="title2">Technical Skills</h2>
+          <table style="width:100%">
+            <tr>
+              <th>Database</th>
+              <td>Oracle, MySQL</td>
+            </tr>
+            <tr>
+              <th>Language</th>
+              <td>Java, JavaScript, SQL, JSP, HTML, XML</td>
+            </tr>
+            <tr>
+              <th>Frameworks</th>  
+              <td>JSF, J2EE</td>
+            </tr>
+            <tr>
+              <th>API's</th>  
+              <td>Servlet, EJB, JNDI(Java Naming and Directory Interface)</td>
+            </tr>
+            <tr>
+              <th>Servers</th>  
+              <td>Java Enterprise System, WebSphere(WAS)</td>
+            </tr>
+          </table>
+        </div>
+
     </div>    
   </div>
-  <script src="Cv.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="CvStyles.css"> 
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./libs/html2canvas.min.js_0.5.0-beta4/cdnjs/html2canvas.min.js"></script>
+<!-- <script src="./libs/jsPDF/parallax-jsPDF-edd59d8/dist/jspdf.umd.js"></script>  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+<script src="./Cv.js"></script>
+
 </html>

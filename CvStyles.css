@@ -96,6 +96,7 @@ height: 100%;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
+   
 }
 .containerInfo ul li .icon
 {
@@ -108,6 +109,11 @@ height: 100%;
 {
     color: #fff;
     font-weight: 300;
+    font-size: 13px;
+}
+.containerInfo ul li a
+{
+    color: #fff;
 }
 .containerInfo.education li
 {
